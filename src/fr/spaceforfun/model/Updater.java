@@ -24,7 +24,7 @@ import fr.spaceforfun.ressources.Constante;
 
 public class Updater {
 
-	private String xmlPath = "http://www.spaceforfun.fr/surveillance/maj.xml";
+	private String xmlPath = "http://eac.spaceforfun.fr/surveillance/maj.xml";
 
 	private Document xmlDocument = null;
 
@@ -74,7 +74,7 @@ public class Updater {
 					System.out.println("choice : "+choice);
 					if(choice == 0)
 					{
-						URI uri = URI.create("http://www.spaceforfun.fr/index.php?module=creations&action=creations");
+						URI uri = URI.create("http://bit.ly/sffcreations");
 						Desktop.getDesktop().browse(uri);
 					}
 				}

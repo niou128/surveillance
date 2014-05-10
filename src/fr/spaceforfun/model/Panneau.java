@@ -28,7 +28,7 @@ public class Panneau extends JPanel{
 	private Color c;
 
 	/**
-	 * red�fini l'affichage
+	 * redéfini l'affichage
 	 * @param s
 	 */
 	public void SetString(String s){

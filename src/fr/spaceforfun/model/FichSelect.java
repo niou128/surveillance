@@ -22,7 +22,7 @@ public class FichSelect implements FileFilter{
 		try {
 			chooser = new JFileChooser();
 			String lf = UIManager.getSystemLookAndFeelClassName();
-			UIManager.setLookAndFeel(lf); //permet d'adapter le style de la fen�tre � l'OS
+			UIManager.setLookAndFeel(lf); //permet d'adapter le style de la fenêtre à l'OS
 			chooser.updateUI();
 		} catch (ClassNotFoundException ex) {
 			Logger.getLogger(FichSelect.class.getName()).log(Level.SEVERE, null, ex);
@@ -36,7 +36,7 @@ public class FichSelect implements FileFilter{
 	}
 
 	/**
-	 * méthode qui permet de choisir un fichier
+	 * m��thode qui permet de choisir un fichier
 	 * @return le chemin vers le fichier
 	 */
 	public File ouvrir(){

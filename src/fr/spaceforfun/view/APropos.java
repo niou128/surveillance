@@ -10,9 +10,15 @@ public class APropos{
 	private String mess;
 
 	public APropos(){
-		System.out.println(getClass().getResource(Constante.son));
-		System.out.println(getClass().getResource(Constante.avatar));
-		ImageIcon img = new ImageIcon(getClass().getResource(Constante.avatar));
+		ImageIcon img = null;
+		try {
+			System.out.println(getClass().getResource(Constante.avatar));
+			img = new ImageIcon(getClass().getResource(Constante.avatar));
+		}
+		catch(java.lang.NullPointerException e)
+		{
+			System.out.println("Erreur avec l'image "+e.getMessage());
+		}
 		mess = "Programme surveillant la modification\nd'un fichier ou d'un dossier\n";
 		mess += "version "+Constante.version+"\n";
 		mess += "Auteur : "+Constante.auteur;

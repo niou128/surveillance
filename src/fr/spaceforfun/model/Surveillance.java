@@ -93,7 +93,7 @@ public class Surveillance extends TimerTask {
 	}
 
 	/**
-	 * Méthode qui permet d'arrêter le timer
+	 * Méthode qui permet d'arréter le timer
 	 */
 	public void arret(){
 		timer.cancel();

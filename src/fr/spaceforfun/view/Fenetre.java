@@ -40,8 +40,8 @@ import fr.spaceforfun.model.Panneau;
 import fr.spaceforfun.model.Surveillance;
 
 /**
- * Classe gérant l'apparence de la fenêtre
- * @author Sébastien Bernard
+ * Classe g��rant l'apparence de la fen��tre
+ * @author S��bastien Bernard
  *
  */
 public class Fenetre extends JFrame{
@@ -216,7 +216,7 @@ public class Fenetre extends JFrame{
 	}
 
 	/**
-	 * Constructeur qui crée la fenêtre
+	 * Constructeur qui cr��e la fen��tre
 	 */
 	public Fenetre(){
 
@@ -229,7 +229,7 @@ public class Fenetre extends JFrame{
 		recup = new Surveillance();
 		label.setText("aucune surveillance");
 
-		/*affiche le dossier surveillé*/ 
+		/*affiche le dossier surveill��*/ 
 		affiche.setLayout(new GridBagLayout());
 		affiche.setColor(Color.GRAY);
 		GridBagConstraints gbc = new GridBagConstraints();
@@ -310,7 +310,7 @@ public class Fenetre extends JFrame{
 	}
 
 	/**
-	 * Initialise les menus. Crée les racourcis clavier et ajoute les listener pour répondre aux clics
+	 * Initialise les menus. Cr��e les racourcis clavier et ajoute les listener pour r��pondre aux clics
 	 */
 	private void initMenu(){
 		ouvrir.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_DOWN_MASK));
@@ -336,7 +336,7 @@ public class Fenetre extends JFrame{
 		fichier.addSeparator();
 		fichier.add(quitter);
 
-		//On crée un nouvel écouteur
+		//On cr��e un nouvel ��couteur
 		SurveillanceListener sl = new SurveillanceListener(this);
 		demarer.addActionListener(sl);
 		dem.addActionListener(sl);
@@ -370,7 +370,7 @@ public class Fenetre extends JFrame{
 		app.addActionListener(ctrl);
 
 		//L'ordre d'ajout va determiner l'ordre d'apparition dans le menu de gauche a droite
-		//Le premier ajouté sera tout a gauche de la barre de menu et inversement pour le dernier
+		//Le premier ajout�� sera tout a gauche de la barre de menu et inversement pour le dernier
 
 		fichier.setMnemonic('F');
 		menuBar.add(fichier);
